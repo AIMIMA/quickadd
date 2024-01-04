@@ -56,6 +56,7 @@ async function start(params, settings) {
         fileName: replaceIllegalFileNameCharactersInString(selectedShow.Title),
         typeLink: `[[${selectedShow.Type === "movie" ? "Movies" : "Series"}]]`,
         languageLower: selectedShow.Language.toLowerCase(),
+		countryOfOrigin: selectedShow.Country,
     }
 }
 
